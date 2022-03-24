@@ -60,14 +60,14 @@ const Navbar = ({ ref }) => {
           <ul class="flex flex-col mt-4 md:hidden md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium">
             {links.map((el) => (
               <li>
-                <a
-                  href="#"
+                <Link
+                  to={el.route}
                   class="block py-2 pr-4 pl-3 text-black hover:text-red-500"
                   aria-current="page"
                   onClick={() => scrollDown(ref)}
                 >
                   {el.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
