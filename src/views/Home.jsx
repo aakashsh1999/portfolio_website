@@ -20,7 +20,7 @@ const Home = () => {
           <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
             <div className="rounded-md shadow">
               <a
-                href="#"
+                href="hello"
                 className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 md:py-4 md:text-lg md:px-10"
               >
                 About
@@ -28,7 +28,7 @@ const Home = () => {
             </div>
             <div className="mt-3 sm:mt-0 sm:ml-3">
               <a
-                href="#"
+                href="hello"
                 className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10"
               >
                 Resume
@@ -36,7 +36,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <img src={heroBg} className="md:w-3/6" />
+        <img src={heroBg}atl="" className="md:w-3/6" />
       </main>
       </div>
     </>
