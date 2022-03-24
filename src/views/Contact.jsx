@@ -19,7 +19,7 @@ const Contact = () => {
           </button>
           <ul className="flex">
             {contactLinks.map((el) => (
-              <a className="mr-6 cursor-pointer hover:scale-125 flex flex-col justify-center items-center">
+              <a href="hello" className="mr-6 cursor-pointer hover:scale-125 flex flex-col justify-center items-center">
                 <img alt="" src={el.url} />
                 {/* <p className="text-md mt-2 hover:hidden">{el.name}</p> */}
               </a>
