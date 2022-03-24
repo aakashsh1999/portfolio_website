@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { scrollDown } from "../constants";
-import { Link } from "react-scroll";
+import {Link} from 'react-scroll'
 const Navbar = ({ ref }) => {
   const [toggle, setToggle] = useState(false);
   const links = [
@@ -37,17 +37,11 @@ const Navbar = ({ ref }) => {
         <div class="hidden justify-between items-center w-full md:flex md:w-auto">
           <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium">
             {links.map((el) => (
-              <li className="cursor-pointer">
-                <Link
-                  to={el.route}
-                  spy={true}
-                  smooth={true}
-                  class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"
-                  aria-current="page"
-                >
-                  {el.name}
-                </Link>
+              <Link to={el.route} spy={true} smooth={true} className='block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md'>
+              <li className='cursor-pointer'>
+                      {el.name}
               </li>
+              </Link>
             ))}
           </ul>
         </div>
@@ -61,7 +55,7 @@ const Navbar = ({ ref }) => {
             {links.map((el) => (
               <li>
                 <Link
-                  to={el.route}
+                to={el.route}
                   class="block py-2 pr-4 pl-3 text-black hover:text-red-500"
                   aria-current="page"
                   onClick={() => scrollDown(ref)}
