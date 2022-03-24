@@ -38,13 +38,14 @@ const Navbar = ({ ref }) => {
           <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium">
             {links.map((el) => (
               <li className="cursor-pointer">
-                <Link to={el.route} spy={true} smooth={true}>
-                  <a
-                    class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"
-                    aria-current="page"
-                  >
-                    {el.name}
-                  </a>
+                <Link
+                  to={el.route}
+                  spy={true}
+                  smooth={true}
+                  class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"
+                  aria-current="page"
+                >
+                  {el.name}
                 </Link>
               </li>
             ))}
