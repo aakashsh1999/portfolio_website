@@ -36,7 +36,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <img src={heroBg}atl="" className="md:w-3/6" />
+        <img src={heroBg} alt="" className="md:w-3/6" />
       </main>
       </div>
     </>

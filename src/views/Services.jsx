@@ -13,7 +13,7 @@ const Services = () => {
         </h4>
         <div className="mt-8 flex md:flex-row justify-between flex-col">
           <div className="w-96 p-4 bg-gray-100 rounded-lg flex items-center flex-col">
-            <img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-web-development-coding-kiranshastry-lineal-color-kiranshastry.png" />
+            <img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-web-development-coding-kiranshastry-lineal-color-kiranshastry.png" alt=""/>
             <h4 className="text-xl font-bold mt-4">
               Web Application Development
             </h4>
@@ -26,7 +26,7 @@ const Services = () => {
             </p>
           </div>
           <div className="w-96 mt-4 p-4 md:mt-0 bg-gray-100 rounded-lg flex items-center flex-col">
-            <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-app-development-responsive-web-design-justicon-lineal-color-justicon.png" />
+            <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-app-development-responsive-web-design-justicon-lineal-color-justicon.png" alt=""/>
             <h4 className="text-xl font-bold mt-4">
               Mobile Application Development
             </h4>
@@ -38,7 +38,7 @@ const Services = () => {
             </p>
           </div>
           <div className="w-96 p-4 mt-4 md:mt-0 bg-gray-100 rounded-lg flex items-center flex-col">
-            <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-backend-no-code-flaticons-flat-flat-icons.png" />
+            <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-backend-no-code-flaticons-flat-flat-icons.png" alt="" />
             <h4 className="text-xl font-bold mt-4">Backend Development</h4>
             <p className="text-lg mt-2 text-justify">
               Graphic design is a craft where professionals create visual
