@@ -1,4 +1,4 @@
-import {  useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Contact from "./views/Contact";
 import Navbar from "./components/Navbar";
 import About from "./views/About";
@@ -25,7 +25,13 @@ function App() {
           <Services />
           <Projects />
           <Contact />
+          <div className="w-full bg-black text-white text-lg py-3 flex justify-center ">
+            Made with
+            <div className="text-red-500 px-2 text-2xl">&#10084;</div>
+            by Aakash Sharma
+          </div>
         </div>
+
       ) : (
         <LoadingScreen />
       )}

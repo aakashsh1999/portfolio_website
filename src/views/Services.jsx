@@ -3,16 +3,16 @@ import React from "react";
 const Services = () => {
   return (
     <div className="pb-12 bg-fixed" style={{backgroundImage: `url('https://i.pinimg.com/originals/b0/b1/f5/b0b1f5d33de00e3c21ad29bbba25e31b.gif')`}}>
-    <div className="max-w-7xl mt-12 mx-auto x-4 sm:px-6 lg:px-8 px-4  pt-10" id='services'>
+    <div className="max-w-7xl mt-12 mx-auto x-4 sm:px-6 lg:px-8 px-4   pt-10" id='services'>
       <h2 className="text-5xl text-white font-bold px-4 md:px-0 text-center pt-12">
         Services
       </h2>
-      <div>
+      <div className=''>
         <h4 className="mt-16 text-3xl font-semibold text-indigo-600">
           What I Provide
         </h4>
-        <div className="mt-8 flex md:flex-row justify-between flex-col md:items-stretch items-center">
-          <div className="w-96 p-4 mx-4 bg-gray-100 rounded-lg flex items-center flex-col">
+        <div className="mt-8 flex md:flex-row justify-between flex-col md:items-stretch items-center ">
+          <div className="md:w-96 p-4 mx-4 bg-gray-100 rounded-lg flex items-center flex-col">
             <img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-web-development-coding-kiranshastry-lineal-color-kiranshastry.png" alt=""/>
             <h4 className="text-xl font-bold mt-4">
               Web Application Development
@@ -25,7 +25,7 @@ const Services = () => {
               user experience design; and search engine
             </p>
           </div>
-          <div className="w-96 mx-4  mt-4 p-4 md:mt-0 bg-gray-100 rounded-lg flex items-center flex-col">
+          <div className="md:w-96 mx-4  mt-4 p-4 md:mt-0 bg-gray-100 rounded-lg flex items-center flex-col">
             <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-app-development-responsive-web-design-justicon-lineal-color-justicon.png" alt=""/>
             <h4 className="text-xl font-bold mt-4">
               Mobile Application Development
@@ -37,7 +37,7 @@ const Services = () => {
               novel mobile interfaces such as chat and voice
             </p>
           </div>
-          <div className="w-96 p-4 mx-4  mt-4 md:mt-0 bg-gray-100 rounded-lg flex items-center flex-col">
+          <div className="md:w-96 p-4 mx-4  mt-4 md:mt-0 bg-gray-100 rounded-lg flex items-center flex-col">
             <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-backend-no-code-flaticons-flat-flat-icons.png" alt="" />
             <h4 className="text-xl font-bold mt-4">Backend Development</h4>
             <p className="text-lg mt-2 text-justify">

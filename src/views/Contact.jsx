@@ -36,7 +36,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              <div className="mb-6">
+              <div className="mb-4">
                 <label
                   for="email"
                   class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300"
@@ -51,7 +51,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              <div className="mb-6">
+              <div className="mb-4">
                 <label
                   for="message"
                   class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300"
@@ -77,7 +77,7 @@ const Contact = () => {
               </div>
             </form>
           </div>
-          <div className="w-full flex flex-col md:items-end  mt-12 md:mt-0">
+          <div className="w-full flex flex-col md:items-end  mt-12 md:mt-6">
             <h1 className="text-3xl font-bold">Email</h1>
             <a
               href="hello"
@@ -86,7 +86,7 @@ const Contact = () => {
               aakash.sh858791@gmail.com
             </a>
             <h1 className="text-3xl  font-bold">Address</h1>
-            <a href="hello" className="mt-4  mb-12  font-semibold text-blue-700 block uppercase">
+            <a href="hello" className="mt-4  mb-12 md:text-right font-semibold text-blue-700 block uppercase">
               Jhilmil Colony, Delhi
               <br />
               India
@@ -106,11 +106,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="w-full bg-black text-white text-lg py-3 flex justify-center md:mt-20 relative ">
-        Made with
-        <div className="text-red-500 px-2 text-2xl">&#10084;</div>
-        by Aakash Sharma
-      </div>
+
     </div>
   );
 };

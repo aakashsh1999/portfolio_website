@@ -26,7 +26,7 @@ const Navbar = ({ ref }) => {
   ];
 
   return (
-    <nav class="bg-white border-gray-200 sm:px-8 shadow-lg fixed w-full top-0">
+    <nav class="bg-white border-gray-200 sm:px-8 shadow-xl fixed w-full top-0">
       <div className="max-w-7xl flex justify-between items-center px-2 py-4 mx-auto">
         <div class="flex items-center cursor-pointer">
           <span class="text-xl font-medium text-decoration-none whitespace-nowrap dark:text-white">
