@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import {  useState, useEffect } from "react";
 import Contact from "./views/Contact";
 import Navbar from "./components/Navbar";
 import About from "./views/About";

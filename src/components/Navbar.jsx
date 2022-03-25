@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { scrollDown } from "../constants";
 import { Link } from "react-scroll";
 const Navbar = ({ ref }) => {
   const [toggle, setToggle] = useState(false);
-  const [active, setActive] = useState(false)
   const links = [
     {
       name: "Home",
