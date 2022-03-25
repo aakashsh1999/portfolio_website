@@ -1,20 +1,36 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import Contact from "./views/Contact";
 import Navbar from "./components/Navbar";
 import About from "./views/About";
 import Home from './views/Home'
 import Services from "./views/Services";
+import Projects from "./views/Projects";
+import LoadingScreen from "./components/LoadingScreen";
 
 function App() {
-  const aboutSection = useRef(null)
+
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 5000)
+  }, [])
+
   return (
-    <div className="App">
-      <Navbar ref={aboutSection} />
-      <Home />
-      <About ref={aboutSection}/>
-      <Services/>
-      <Contact/>
-    </div>
+    <>
+      {loading === false ? (
+        <div className="App">
+          <Navbar />
+          <Home />
+          <About />
+          <Services />
+          <Projects />
+          <Contact />
+        </div>
+      ) : (
+        <LoadingScreen />
+      )}
+    </>
+
   );
 }
 
