@@ -68,9 +68,7 @@ const Navbar = () => {
                 <Link
                   to={el.route}
                   activeClass={
-                    darkMode
-                      ? "text-black bg-blue-500"
-                      : "text-white bg-blue-500"
+                    "text-white bg-blue-500"  
                   }
                   spy={true}
                   smooth={true}
