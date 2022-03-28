@@ -1,6 +1,7 @@
 import React from "react";
 import heroBg from "../assets/webdev.svg";
 import Typical from "react-typical";
+import { contactLinks } from "../constants";
 
 const Home = () => {
   return (
@@ -20,7 +21,14 @@ const Home = () => {
               <span className="block text-white">Hi, I am Aakash</span>
               <span className="block text-indigo-600 lg:inline">
                 <Typical
-                  steps={["Front End Developer", 1000, "Full Stack Developer", 1000, "Mobile Developer", 1000]}
+                  steps={[
+                    "Front End Developer",
+                    1000,
+                    "Full Stack Developer",
+                    1000,
+                    "Mobile Developer",
+                    1000,
+                  ]}
                   loop={Infinity}
                 />
               </span>
@@ -46,6 +54,17 @@ const Home = () => {
                   Resume
                 </a>
               </div>
+            </div>
+            <div className="flex md:justify-start justify-center">
+              {contactLinks.map((el) => (
+                <a
+                  href="hello"
+                  className="mr-5 cursor-pointer mt-8 hover:scale-125"
+                >
+                  <img alt="" src={el.url} />
+                  {/* <p className="text-md mt-2 hover:hidden">{el.name}</p> */}
+                </a>
+              ))}
             </div>
           </div>
           <img src={heroBg} alt="" className="md:w-3/6" />

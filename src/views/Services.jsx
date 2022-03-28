@@ -3,7 +3,7 @@ import React from "react";
 const Services = () => {
   return (
     <div className="pb-12 bg-fixed" style={{backgroundImage: `url('https://i.pinimg.com/originals/b0/b1/f5/b0b1f5d33de00e3c21ad29bbba25e31b.gif')`}}>
-    <div className="max-w-7xl mt-12 mx-auto x-4 sm:px-6 lg:px-8 px-4   pt-10" id='services'>
+    <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4  pt-10" id='services'>
       <h2 className="text-5xl text-white font-bold px-4 md:px-0 text-center pt-12">
         Services
       </h2>
