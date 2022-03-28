@@ -20,7 +20,7 @@ function App() {
   return (
     <ThemeProvider>
       <>
-        {loading === false ? (
+        {!loading ? (
           <div >
             <Navbar />
             <Home />
@@ -28,11 +28,6 @@ function App() {
             <Services />
             <Projects />
             <Contact />
-            <div className="w-full bg-black text-white text-lg py-3 flex justify-center ">
-              Made with
-              <div className="text-red-500 px-2 text-2xl">&#10084;</div>
-              by Aakash Sharma
-            </div>
           </div>
 
         ) : (

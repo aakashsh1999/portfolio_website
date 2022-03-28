@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <div id="about" className={darkMode === true ? "bg-white" : "bg-black"}>
-      <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4 md:mt-0 pt-24">
+      <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4 md:mt-0 pt-24 pb-12">
         <h2
           className={
             darkMode

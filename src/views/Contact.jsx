@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { contactLinks } from "../constants";
+import { ThemeContext } from "../themeProvider";
 
 const Contact = () => {
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <div id="contact" className="bg-gray-100 pt-24 md:h-screen">
+    <div
+      id="contact"
+      className={darkMode ? "bg-gray-100 pt-28" : "bg-black pt-28 text-white"}
+    >
       <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4 ">
         <h2 className="text-5xl font-bold px-4 md:px-0 text-center z-0">
           Contact
@@ -24,7 +30,11 @@ const Contact = () => {
               <div class="my-6">
                 <label
                   for="name"
-                  class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300"
+                  class={
+                    darkMode
+                      ? "block mb-2 text-lg font-medium text-gray-900"
+                      : "block mb-2 text-lg font-medium text-white"
+                  }
                 >
                   Name
                 </label>
@@ -39,7 +49,11 @@ const Contact = () => {
               <div className="mb-4">
                 <label
                   for="email"
-                  class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300"
+                  class={
+                    darkMode
+                      ? "block mb-2 text-lg font-medium text-gray-900"
+                      : "block mb-2 text-lg font-medium text-white"
+                  }
                 >
                   Email
                 </label>
@@ -54,7 +68,11 @@ const Contact = () => {
               <div className="mb-4">
                 <label
                   for="message"
-                  class="block mb-2 text-lg font-medium text-gray-900 dark:text-gray-300"
+                  class={
+                    darkMode
+                      ? "block mb-2 text-lg font-medium text-gray-900"
+                      : "block mb-2 text-lg font-medium text-white"
+                  }
                 >
                   Message
                 </label>
@@ -78,6 +96,13 @@ const Contact = () => {
             </form>
           </div>
           <div className="w-full flex flex-col md:items-end  mt-12 md:mt-6">
+            {/* <h1 className="text-3xl font-bold">Phone</h1>
+            <a
+              href="hello"
+              className="mb-12 mt-4 font-semibold text-blue-700 block uppercase"
+            >
+              +91 8285631499
+            </a> */}
             <h1 className="text-3xl font-bold">Email</h1>
             <a
               href="hello"
@@ -86,7 +111,10 @@ const Contact = () => {
               aakash.sh858791@gmail.com
             </a>
             <h1 className="text-3xl  font-bold">Address</h1>
-            <a href="hello" className="mt-4  mb-12 md:text-right font-semibold text-blue-700 block uppercase">
+            <a
+              href="hello"
+              className="mt-4  mb-12 md:text-right font-semibold text-blue-700 block uppercase"
+            >
               Jhilmil Colony, Delhi
               <br />
               India
@@ -106,7 +134,17 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
+      <div
+        className={
+          darkMode
+            ? "w-full bg-white text-black text-lg py-3 flex justify-center "
+            : "w-full bg-black text-white text-lg py-3 flex justify-center "
+        }
+      >
+        Made with
+        <div className="text-red-500 px-2 text-2xl">&#10084;</div>
+        by Aakash Sharma
+      </div>
     </div>
   );
 };

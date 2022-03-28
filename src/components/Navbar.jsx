@@ -51,7 +51,7 @@ const Navbar = () => {
           <span
             className={
               darkMode
-                ? "text-xl font-medium text-decoration-none whitespace-nowrap dark:text-white"
+                ? "text-xl font-medium text-decoration-none whitespace-nowrap text-black"
                 : "text-xl font-medium text-decoration-none whitespace-nowrap text-white"
             }
           >
@@ -137,7 +137,7 @@ const Navbar = () => {
       </div>
       {/* Mobile view nav bar */}
       {toggle && (
-        <div className="bg-blue-100 py-2 px-2 md:p-0">
+        <div className="bg-blue-100 py-2 px-2 md:p-0 z-50 block">
           <ul class="md:hidden md:flex-row md:space-y-8 md:mt-0 md:text-md md:font-medium">
             {links.map((el) => (
               <Link
