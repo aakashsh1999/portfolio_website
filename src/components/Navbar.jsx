@@ -30,8 +30,7 @@ const Navbar = () => {
   ];
 
   function toggleTheme() {
-    if (darkMode) {
-      console.log(darkMode);
+    if (darkMode ===true ) {
       theme.dispatch({ type: "LIGHTMODE" });
     } else {
       theme.dispatch({ type: "DARKMODE" });
@@ -43,7 +42,7 @@ const Navbar = () => {
       className={
         darkMode
           ? "bg-white border-gray-200 shadow-2xl md:px-8 fixed w-full top-0"
-          : "bg-black border-gray-200 shadow-2xl md:px-8 fixed w-full top-0"
+          : "bg-gray-700 border-gray-200 shadow-2xl md:px-8 fixed w-full top-0"
       }
     >
       <div className="flex justify-between items-center px-2 py-4 mx-auto">

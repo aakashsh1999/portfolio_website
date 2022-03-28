@@ -20,6 +20,7 @@ function App() {
   return (
     <ThemeProvider>
       <>
+
         {!loading ? (
           <div >
             <Navbar />
@@ -28,7 +29,7 @@ function App() {
             <Services />
             <Projects />
             <Contact />
-          </div>
+            </div>
 
         ) : (
           <LoadingScreen />

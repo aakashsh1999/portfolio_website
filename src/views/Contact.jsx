@@ -8,7 +8,11 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className={darkMode ? "bg-gray-100 pt-28" : "bg-black pt-28 text-white"}
+      className={
+        darkMode
+          ? "bg-gray-100 pt-24 md:h-screen"
+          : "bg-black pt-24 text-white md:h-screen"
+      }
     >
       <div className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4 ">
         <h2 className="text-5xl font-bold px-4 md:px-0 text-center z-0">
@@ -137,8 +141,8 @@ const Contact = () => {
       <div
         className={
           darkMode
-            ? "w-full bg-white text-black text-lg py-3 flex justify-center "
-            : "w-full bg-black text-white text-lg py-3 flex justify-center "
+            ? "w-full bg-white text-black text-lg py-3 flex justify-center md:mt-20"
+          :"w-full bg-gray-900 text-white text-lg py-3 flex justify-center md:mt-20"
         }
       >
         Made with
