@@ -12,14 +12,14 @@ const Home = () => {
   return (
     <>
       <div
-      // className="bg-fixed "
-      // style={{
-      //   backgroundImage: `url('https://img.wallpapersafari.com/desktop/1920/1080/14/73/tWkswF.png')`,
-      // }}
-      className={darkMode ? "bg-gray-100" : "bg-black"}
+        // className="bg-fixed "
+        // style={{
+        //   backgroundImage: `url('https://img.wallpapersafari.com/desktop/1920/1080/14/73/tWkswF.png')`,
+        // }}
+        className={darkMode ? "bg-gray-100" : "bg-black"}
       >
         <main
-          className="mx-auto max-w-7xl px-4  pt-36 sm:px-6 md:mt-0 lg:px-8 flex flex-col md:flex-row items-center md:h-screen"
+          className="mx-auto max-w-7xl px-4  pt-36 sm:px-6 md:mt-0 lg:px-8 flex flex-col md:flex-row items-center justify-center h-screen"
           id="/"
         >
           <div className="sm:text-center lg:text-left">
@@ -31,11 +31,11 @@ const Home = () => {
                 <Typical
                   steps={[
                     "Front End Developer",
-                    2000,
+                    1000,
                     "Full Stack Developer",
-                    2000,
+                    1000,
                     "Mobile Developer",
-                    2000,
+                    1000,
                   ]}
                   loop={Infinity}
                 />
@@ -51,6 +51,17 @@ const Home = () => {
               I am a Front-End / Full-Stack Developer. I am currently working at
               CloudStok Technologies as a Front-End Developer
             </p>
+            <div className="flex md:justify-start ">
+              {contactLinks.map((el) => (
+                <a
+                  href="hello"
+                  className="mr-5 cursor-pointer mt-8 hover:scale-125"
+                >
+                  <img alt="" src={el.url} />
+                  {/* <p className="text-md mt-2 hover:hidden">{el.name}</p> */}
+                </a>
+              ))}
+            </div>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
                 <a
@@ -69,19 +80,8 @@ const Home = () => {
                 </a>
               </div>
             </div>
-            <div className="flex md:justify-start justify-center">
-              {contactLinks.map((el) => (
-                <a
-                  href="hello"
-                  className="mr-5 cursor-pointer mt-8 hover:scale-125"
-                >
-                  <img alt="" src={el.url} />
-                  {/* <p className="text-md mt-2 hover:hidden">{el.name}</p> */}
-                </a>
-              ))}
-            </div>
           </div>
-          <img src={heroBg} alt="" className="md:w-3/6" />
+          <img src={heroBg} alt="" className="md:w-3/6 hidden sm:block" />
         </main>
         {/* <Particles
           params={{
