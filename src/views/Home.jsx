@@ -3,30 +3,26 @@ import heroBg from "../assets/webdev.svg";
 import Typical from "react-typical";
 import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
-import Particles from "react-tsparticles";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
-
   return (
     <>
-      <div
-        // className="bg-fixed "
-        // style={{
-        //   backgroundImage: `url('https://img.wallpapersafari.com/desktop/1920/1080/14/73/tWkswF.png')`,
-        // }}
-        className={darkMode ? "bg-gray-100" : "bg-black"}
-      >
+      <div className={darkMode ? "bg-gray-100" : "bg-black"}>
         <main
           className="mx-auto max-w-7xl px-4  pt-36 sm:px-6 md:mt-0 lg:px-8 flex flex-col md:flex-row items-center justify-center h-screen"
           id="/"
         >
           <div className="sm:text-center lg:text-left">
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-              <span className={darkMode ? "block text-black" : " text-white"}>
+              <motion.span
+                
+                className={darkMode ? "block text-black" : " text-white"}
+              >
                 Hi, I am Aakash
-              </span>
+              </motion.span>
               <span className="block text-indigo-600 z-0 lg:inline">
                 <Typical
                   steps={[

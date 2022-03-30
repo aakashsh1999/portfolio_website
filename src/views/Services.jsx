@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { serviceData } from "../constants";
-import { ThemeContext, ThemeProvider } from "../themeProvider";
+import { ThemeContext} from "../themeProvider";
 
 const Services = () => {
   const theme = useContext(ThemeContext);
