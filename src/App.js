@@ -8,13 +8,10 @@ import Projects from "./views/Projects";
 import LoadingScreen from "./components/LoadingScreen";
 import { ThemeProvider } from "./themeProvider";
 
-
-
-
 function App() {
   const [loading, setLoading] = useState(true)
   useEffect(() => {
-    setTimeout(() => setLoading(false), 5000)
+    setTimeout(() => setLoading(false), 1000)
   }, [])
 
   return (
@@ -29,7 +26,7 @@ function App() {
             <Services />
             <Projects />
             <Contact />
-            </div>
+          </div>
 
         ) : (
           <LoadingScreen />

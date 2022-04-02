@@ -19,7 +19,7 @@ const Contact = () => {
           Contact
         </h2>
         <div>
-          <h4 className="mt-12 text-3xl font-semibold text-indigo-600">
+          <h4 className="mt-12 text-3xl font-semibold text-blue-500">
             Conenct with me
           </h4>
           <p className="text-gray-500 text-xl">
@@ -127,7 +127,7 @@ const Contact = () => {
             <ul className="flex">
               {contactLinks.map((el) => (
                 <a
-                  href="hello"
+                  href={el.link}
                   className="md:ml-6 md:mr-0 mr-6 cursor-pointer mt-4 hover:scale-125 flex flex-col justify-center items-center"
                 >
                   <img alt="" src={el.url} />
@@ -142,7 +142,7 @@ const Contact = () => {
         className={
           darkMode
             ? "w-full bg-white text-black text-lg py-3 flex justify-center md:mt-20"
-          :"w-full bg-gray-900 text-white text-lg py-3 flex justify-center md:mt-20"
+            : "w-full bg-gray-900 text-white text-lg py-3 flex justify-center md:mt-20"
         }
       >
         Made with
