@@ -18,7 +18,7 @@ const Projects = () => {
         <h4 className="mt-16 text-3xl font-semibold text-blue-600">
           What I Built
         </h4>
-        <div className="flex justify-between items-stretch flex-wrap">
+        <div className="mt-8 flex justify-between items-stretch flex-wrap">
           <Card />
           <Card />
           <Card />

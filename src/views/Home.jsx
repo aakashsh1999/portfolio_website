@@ -5,13 +5,21 @@ import { contactLinks } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import cloud from "../assets/cloudBg.png";
+import cloudDark from "../assets/cloudDark.png";
 
 const Home = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   return (
     <>
-      <div className={darkMode ? "bg-gray-100" : "bg-black"}>
+      <div
+        style={
+          darkMode
+            ? { backgroundImage: `url('${cloud}')`, backgroundSize: "cover" }
+            : { backgroundImage: `url('${cloudDark}'`, backgroundSize: "cover" }
+        }
+      >
         <main
           className="mx-auto max-w-7xl px-4 sm:px-6 md:mt-0 lg:px-8 flex flex-col md:flex-row items-center justify-center md:justify-between h-screen"
           id="/"
@@ -66,7 +74,23 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <img src={heroBg} alt="" className="md:w-3/6 hidden sm:block" />
+          <motion.img
+            initial="hidden"
+            whileInView={"visible"}
+            variants={{
+              visible: {
+                y: 0,
+                opacity: 1,
+                transition: {
+                  type: "spring",
+                },
+              },
+              hidden: { opacity: 1, y: 80 },
+            }}
+            src={heroBg}
+            alt=""
+            className="md:w-3/6 hidden sm:block"
+          />
         </main>
       </div>
     </>

@@ -13,7 +13,7 @@ const Services = () => {
       // style={{backgroundImage: `url('https://i.pinimg.com/originals/b0/b1/f5/b0b1f5d33de00e3c21ad29bbba25e31b.gif')`}}>
     >
       <div
-        className="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 px-4 pt-20"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 px-4 pt-20"
         id="services"
       >
         <h2
@@ -40,8 +40,8 @@ const Services = () => {
                 }}
                 className={
                   theme.state.darkMode
-                    ? "md:w-96 p-4 mx-4 bg-white rounded-lg flex items-center flex-col mt-8"
-                    : "md:w-96 p-4 mx-4 bg-gray-100 rounded-lg flex items-center flex-col mt-8"
+                    ? "md:w-96 p-4 bg-white rounded-lg flex items-center flex-col mt-8"
+                    : "md:w-96 p-4 bg-gray-100 rounded-lg flex items-center flex-col mt-8"
                 }
               >
                 <img src={el.img} alt="" />

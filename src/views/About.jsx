@@ -19,8 +19,7 @@ const About = () => {
           About Me
         </h2>
         <div>
-          <motion.div
-          >
+          <motion.div>
             <h4 className="mt-12 text-3xl font-semibold text-blue-500">
               A bit about me
             </h4>
@@ -58,7 +57,7 @@ const About = () => {
               websites for smartphones, tablets, and desktops.
             </p>
           </motion.div>
-          <motion.div className="flex flex-wrap mt-8 flex flex-wrap justify-between">
+          <motion.div className="flex flex-wrap mt-8 flex flex-wrap justify-between ">
             {techStack.map((el, index) => (
               <motion.div
                 initial="hidden"
@@ -69,12 +68,11 @@ const About = () => {
                     opacity: 1,
                     transition: {
                       type: "spring",
-                      duration: 2,
                     },
                   },
-                  hidden: { opacity: 1, y: 20 },
+                  hidden: { opacity: 1, y: 80 },
                 }}
-                className="py-2 px-4 bg-gray-50 md:m-4 m-2 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
+                className="py-2 px-4 bg-gray-50 md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40"
               >
                 <img alt="" src={el.link} className="w-12" />
                 <h4 className="text-md ml-4">{el.name}</h4>
