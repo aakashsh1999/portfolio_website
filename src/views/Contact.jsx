@@ -20,7 +20,7 @@ const Contact = () => {
         </h2>
         <div>
           <h4 className="mt-12 text-3xl font-semibold text-blue-500">
-            Conenct with me
+            Connect with me
           </h4>
           <p className="text-gray-500 text-xl">
             If you want to know more about me or my work, or if you would just
