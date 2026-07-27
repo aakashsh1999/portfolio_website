@@ -28,7 +28,7 @@
   --font-body: "Archivo", sans-serif;
   --radius: 18px;
   --nav-h: 72px;
-  --page-gutter: 1.25rem;
+  --page-gutter: 20px;
   color-scheme: dark;
 }
 
@@ -57,6 +57,7 @@
   --surface-muted: rgba(11, 18, 32, 0.04);
   --hover-wash: rgba(21, 93, 204, 0.06);
   --shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  --page-gutter: 20px;
   color-scheme: light;
 }
 
@@ -149,9 +150,11 @@ textarea {
 }
 
 .container {
-  width: min(1140px, calc(100% - (var(--page-gutter) * 2)));
-  margin: 0 auto;
-  padding-inline: 0;
+  width: 100%;
+  max-width: 1140px;
+  margin-inline: auto;
+  padding-inline: var(--page-gutter);
+  box-sizing: border-box;
 }
 
 .eyebrow {
@@ -1857,12 +1860,27 @@ textarea {
   [data-theme="dark"],
   [data-theme="light"] {
     --nav-h: 64px;
-    --page-gutter: 1.5rem;
+    --page-gutter: 24px;
     --radius: 16px;
   }
 
   .container {
-    width: min(1140px, calc(100% - (var(--page-gutter) * 2)));
+    width: 100%;
+    max-width: 1140px;
+    padding-inline: var(--page-gutter);
+  }
+
+  .section,
+  .hero,
+  .big-cta,
+  .section--stats {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .site-footer__inner,
+  .nav__inner {
+    padding-inline: 0;
   }
 
   .section {
@@ -2250,7 +2268,6 @@ textarea {
 
   .big-cta__inner {
     gap: 0.85rem;
-    padding-inline: 0;
   }
 
   .big-cta__title {
@@ -2269,7 +2286,10 @@ textarea {
   }
 
   .preloader__inner {
-    width: min(420px, calc(100% - (var(--page-gutter) * 2)));
+    width: 100%;
+    max-width: 420px;
+    padding-inline: var(--page-gutter);
+    box-sizing: border-box;
   }
 
   .preloader__count {
@@ -2281,7 +2301,7 @@ textarea {
   :root,
   [data-theme="dark"],
   [data-theme="light"] {
-    --page-gutter: 1.35rem;
+    --page-gutter: 20px;
   }
 
   .hero__greeting {
