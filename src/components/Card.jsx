@@ -47,7 +47,9 @@ const Card = ({ project, large = false }) => {
         <span className="project-card__badge">
           {project.category === "noise"
             ? "Noise × Helium"
-            : project.category}
+            : project.category === "brand"
+              ? "Brand × Helium"
+              : project.category}
         </span>
       </div>
 

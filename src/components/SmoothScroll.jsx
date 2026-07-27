@@ -7,6 +7,13 @@ const SmoothScroll = () => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       return undefined;
     }
+    // Native scroll feels better on phones/tablets
+    if (window.matchMedia("(pointer: coarse)").matches) {
+      return undefined;
+    }
+    if (window.matchMedia("(max-width: 860px)").matches) {
+      return undefined;
+    }
 
     const lenis = new Lenis({
       duration: 1.15,
