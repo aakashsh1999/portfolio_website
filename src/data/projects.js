@@ -5,7 +5,7 @@ export const projects = [
     description:
       "Immersive headphone product experience for Noise — horizontal feature storytelling, media-rich sections, and sticky purchase UX on gonoise.com.",
     tech: ["Next.js", "React", "Motion", "Helium"],
-    liveUrl: "https://www.gonoise.com/products/noise-airwave-max-6-headphone",
+    liveUrl: "https://www.gonoise.com/a/h/noise-airwave-max-6-headphones",
     repoUrl: null,
     image: "/projects/noise-airwave.jpg",
     category: "noise",
@@ -18,7 +18,7 @@ export const projects = [
       "Flagship TWS landing with variant bento grids, scroll-driven media, and conversion-focused sticky CTAs built in Helium Builder.",
     tech: ["Next.js", "React", "Framer Motion", "Helium"],
     liveUrl:
-      "https://www.gonoise.com/products/noise-master-buds-2-truly-wireless-bluetooth-earbuds",
+      "https://www.gonoise.com/a/h/noise-master-buds-2-truly-wireless-earbuds",
     repoUrl: null,
     image: "/projects/noise-master-buds-2.jpg",
     category: "noise",
@@ -30,8 +30,7 @@ export const projects = [
     description:
       "Wireless headphone PDP with cinematic first-fold video, feature chapters, and a polished sticky buy bar for Noise’s Master series.",
     tech: ["Next.js", "React", "Motion", "Helium"],
-    liveUrl:
-      "https://www.gonoise.com/products/noise-master-buds-max-wireless-headphone",
+    liveUrl: "https://www.gonoise.com/a/h/noise-master-buds-max",
     repoUrl: null,
     image: "/projects/noise-master-buds-max.jpg",
     category: "noise",
